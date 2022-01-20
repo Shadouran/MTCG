@@ -20,21 +20,20 @@ The database is cleaned after every restart, to remove just comment out the the 
 
 **Unit Tests**
 
-The unit tests I used are solely for the weakness chart since this is the most critical part of the battle.
+The unit tests I used are for the weakness chart and elo calculations since those impact the gameplay, apart from the cards themselves, the most.
 I tested all standard cases of monster vs monster, spell vs spell, monster vs spell and all special interactions such as
 goblin vs dragon or firelf vs dragon.
-I would have also added unit tests to the trading function since this is another critical part. Cards could easily get lost, duplicated or trades would not be accepted even though all requirements are fulfilled but I had to prioritize.
-
+The elo calculation test cover all growth factors that get decided via games played/winrate.
+Had I begun earlier I would have also added unit tests to the trading function since this is another critical part. Cards could easily get lost, duplicated or trades would not be accepted even though all requirements are fulfilled.
 
 **Tracked Time**
 
-* 15.01.2022 11:20 - 19:30 | user register/login, card packages
-* 16.01.2022 11:00 - 15:00, 17:45 - 19:45 | stack, deck
-* 17.01.2022 11:30 - 19:00 | routeParser GET parameters, task per client, user profile, stats
-* 18.01.2022 11:25 - 18:50 | battle
-* 19.01.2022 12:00 - 18:35 | trading
-* 20.01.2022 11:50 - 13:00 | protocol
-
+- 15.01.2022 11:20 - 19:30 | user register/login, card packages
+- 16.01.2022 11:00 - 15:00, 17:45 - 19:45 | stack, deck
+- 17.01.2022 11:30 - 19:00 | routeParser GET parameters, task per client, user profile, stats
+- 18.01.2022 11:25 - 18:50 | battle
+- 19.01.2022 12:00 - 18:35 | trading
+- 20.01.2022 11:50 - 15:00 | protocol, elo calculation tests, cleanup
 
 **Github Link**
 
