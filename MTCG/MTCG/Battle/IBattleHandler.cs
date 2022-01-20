@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.Battle
 {
-    interface IBattleHandler
+    public interface IBattleHandler
     {
         void QueueUser(User user);
         int GetUserNumberInQueue();

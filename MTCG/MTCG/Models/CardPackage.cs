@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.Models
 {
-    class CardPackage
+    public class CardPackage
     {
         public Guid Uid { get; set; }
         public ICollection<Card> Cards { get; set; }

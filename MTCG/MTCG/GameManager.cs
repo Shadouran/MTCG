@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MTCG
 {
-    class GameManager : IGameManager
+    public class GameManager : IGameManager
     {
         private readonly ICardPackageRepository CardPackageRepository;
         private readonly IStackRepository StackRepository;
@@ -179,7 +179,7 @@ namespace MTCG
             StatisticsRepository.UpdateLossesByUsername(loser, 1);
         }
 
-        private int CalculateElo(string playerA, string playerB, int achievedPoints)
+        public int CalculateElo(string playerA, string playerB, int achievedPoints)
         {
             var statisticsA = StatisticsRepository.SelectStatisticsByUsername(playerA);
             var statisticsB = StatisticsRepository.SelectStatisticsByUsername(playerB);
@@ -187,7 +187,7 @@ namespace MTCG
             var k = 20;
             if (statisticsA.GamesPlayed <= 30)
                 k = 40;
-            else if (statisticsA.GamesPlayed > 30 && statisticsA.ELO > 2400)
+            else if (statisticsA.GamesPlayed > 30 && statisticsA.ELO > 2400 && (statisticsA.Wins/statisticsA.Wins+statisticsA.Losses) > 0.51)
                 k = 10;
             return Convert.ToInt32(Math.Round(statisticsA.ELO + k * (achievedPoints - expectedScore)));
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.Models
 {
-    class Trade
+    public class Trade
     {
         public string Id { get; set; }
         public string Username { get; set; }

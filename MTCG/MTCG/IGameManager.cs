@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MTCG
 {
-    interface IGameManager
+    public interface IGameManager
     {
         User LoginUser(Credentials credentials);
         void RegisterUser(Credentials credentials);

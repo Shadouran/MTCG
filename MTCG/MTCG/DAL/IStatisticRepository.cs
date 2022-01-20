@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.DAL
 {
-    interface IStatisticRepository
+    public interface IStatisticRepository
     {
         Dictionary<string, Statistics> SelectStatistics();
         Statistics SelectStatisticsByAuthToken(string authToken);

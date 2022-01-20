@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.DAL
 {
-    interface IStackRepository
+    public interface IStackRepository
     {
         void InsertCard(string username, Card card);
         void InsertCards(string username, ICollection<Card> cards);

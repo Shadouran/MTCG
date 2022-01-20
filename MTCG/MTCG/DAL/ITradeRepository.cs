@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.DAL
 {
-    interface ITradeRepository
+    public interface ITradeRepository
     {
         ICollection<Trade> SelectTrades();
         void InsertTrade(Trade trade);

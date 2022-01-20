@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.Models
 {
-    class Statistics
+    public class Statistics
     {
         public uint ELO { get; set; }
         public uint Wins { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MTCG.DAL
 {
-    interface ICardPackageRepository
+    public interface ICardPackageRepository
     {
         void InsertCardPackage(CardPackage cardPackage);
         void RemoveCardPackage(CardPackage cardPackage);
