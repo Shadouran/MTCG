@@ -13,5 +13,6 @@ namespace MTCG.DAL
         void InsertTrade(Trade trade);
         Trade SelectTrade(string tradeId);
         void DeleteTrade(string username, string tradeId);
+        ICollection<Trade> SelectTradesByUsername(string username);
     }
 }

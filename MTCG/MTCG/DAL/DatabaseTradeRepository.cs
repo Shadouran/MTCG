@@ -14,6 +14,7 @@ namespace MTCG.DAL
 
         private const string SelectTradesCommand = "SELECT * FROM trades";
         private const string SelectTradeCommand = "SELECT * FROM trades WHERE id=@id";
+        private const string SelectTradesByUsernameCommand = "SELECT * FROM trades WHERE username=@username";
         private const string InsertTradeCommand = "INSERT INTO trades (id, username, cardid, cardtype, element, mindamage) VALUES (@id, @username, @cardid, @cardtype, @element, @mindamage)";
         private const string DeleteTradeCommand = "DELETE FROM trades WHERE id=@id AND username=@username";
 
@@ -76,6 +77,30 @@ namespace MTCG.DAL
         public ICollection<Trade> SelectTrades()
         {
             using var cmd = new NpgsqlCommand(SelectTradesCommand, _connection);
+            DatabaseLock.Semaphore.WaitOne();
+            List<Trade> trades = new();
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+                trades.Add(new Trade
+                {
+                    Id = Convert.ToString(reader.GetValue(reader.GetOrdinal("id"))),
+                    Username = Convert.ToString(reader.GetValue(reader.GetOrdinal("username"))),
+                    CardId = Convert.ToString(reader.GetValue(reader.GetOrdinal("cardid"))),
+                    CardType = Enum.Parse<CardType>(Convert.ToString(reader.GetValue(reader.GetOrdinal("cardtype")))),
+                    Element = Enum.Parse<Element>(Convert.ToString(reader.GetValue(reader.GetOrdinal("element")))),
+                    MinimumDamage = Convert.ToDouble(reader.GetValue(reader.GetOrdinal("mindamage")))
+                });
+            reader.Close();
+            DatabaseLock.Semaphore.Release();
+            if (trades.Count == 0)
+                return null;
+            return trades;
+        }
+
+        public ICollection<Trade> SelectTradesByUsername(string username)
+        {
+            using var cmd = new NpgsqlCommand(SelectTradesByUsernameCommand, _connection);
+            cmd.Parameters.AddWithValue("username", username);
             DatabaseLock.Semaphore.WaitOne();
             List<Trade> trades = new();
             var reader = cmd.ExecuteReader();

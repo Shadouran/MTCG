@@ -109,12 +109,13 @@ namespace MTCG
                 throw new UserNotAuthorizedException();
             if (cardIds.Count() != 4)
                 throw new InvalidCardCountException("Deck does not have 4 cards");
-            // TODO cards cannot be in a trade
-            //var trades = TradeRepository.SelectTradesByUsername();
             var cards = StackRepository.GetCardsByAuthToken(user.Token);
-            var result = cards.Where(c => cardIds.Any(cid => cid == c.Id));
-            if (result.Count() == 4)
+            var stackCardIds = cards.Select(card => card.Id).ToList();
+            if (!cardIds.Except(stackCardIds).Any())
             {
+                var cardIdInTrades = TradeRepository.SelectTradesByUsername(user.Username);
+                if (cardIdInTrades != null && cardIdInTrades.Select(trade => trade.CardId).ToList().Intersect(cardIds).Any())
+                    throw new InvalidCardException("Cannot set cards that are in a trade");
                 DeckRepository.ResetDeck(user.Token);
                 DeckRepository.InsertCardsByAuthToken(user.Token, cardIds);
             }
