@@ -16,6 +16,7 @@ I adjusted the RouteParser a little to allow for GET parameters in the url to be
 Apart from that I created new repositories, manager and route command but kept the overall design since there is literally no need
 to change it.
 
+The database is cleaned after every restart, to remove just comment out the the call to method ClearDatabase in Database.cs
 
 **Unit Tests**
 
