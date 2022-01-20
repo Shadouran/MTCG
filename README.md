@@ -11,7 +11,7 @@ still allow simultaneous queries with Postgre does not support.
 For the solutions I created a seperate class that contains a single static semaphore which is now used by all repository classes
 which guarantees that only one command is executed at a time.
 
-The server is almost completely the same we developed in classes except he starts a new task for handling a client.
+The server is almost completely the same we developed in classes except it starts a new task for handling a client.
 I adjusted the RouteParser a little to allow for GET parameters in the url to be parsed more or less fluently.
 Apart from that I created new repositories, manager and route command but kept the overall design since there is literally no need
 to change it.
