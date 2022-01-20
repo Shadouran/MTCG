@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MTCG.DuplicateUserException">
+    <Position X="30.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DuplicateUserException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.InvalidCardCountException">
+    <Position X="21.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidCardCountException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.InvalidCardException">
+    <Position X="27" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidCardException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.InvalidTradeException">
+    <Position X="28.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidTradeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.NoTradesFoundException">
+    <Position X="34" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoTradesFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.UnavailableCardException">
+    <Position X="23.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UnavailableCardException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.UnconfiguredDeckException">
+    <Position X="25.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UnconfiguredDeckException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.UserNotAuthorizedException">
+    <Position X="35.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UserNotAuthorizedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.UserNotFoundException">
+    <Position X="37.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UserNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.GameManager" BaseTypeListCollapsed="true">
+    <Position X="37.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAEIAACIAQAAAAAQMAEZAAACAQIIAIAQCAQACIAAAE=</HashCode>
+      <FileName>GameManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.IdentityProvider" BaseTypeListCollapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>IdentityProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.Program">
+    <Position X="32" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAABAABAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteParser" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RouteParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.Battle.BattleHandler" BaseTypeListCollapsed="true">
+    <Position X="33" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAUgAoAAAAICAgAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Battle\BattleHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.Battle.BattleLogger" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMQAAwEQAAIAAAAAAAIAAAAgAAQAAABAAAAAAIAA=</HashCode>
+      <FileName>Battle\BattleLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.Battle.SpecialInteractions">
+    <Position X="29.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAIAAAQAAAAAAA=</HashCode>
+      <FileName>Battle\SpecialInteractions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.DAL.Database">
+    <Position X="44.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAABGAAAAAAAAAIAAAIAAAAAAAAAAACAQAAIABAA=</HashCode>
+      <FileName>DAL\Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseCardPackageRepository" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAAEAAAAABAACAAgAAAAAABAAgAAAIAQAABAA=</HashCode>
+      <FileName>DAL\DatabaseCardPackageRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseCardRepository" BaseTypeListCollapsed="true">
+    <Position X="47" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgCAAAEBEAAQAAAAAAAAAQACAAAAAAAAAAAAABAg=</HashCode>
+      <FileName>DAL\DatabaseCardRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseDeckRepository" BaseTypeListCollapsed="true">
+    <Position X="50.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACQAgEAEQAAAAAQAAACQAAIAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>DAL\DatabaseDeckRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseLock">
+    <Position X="47" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\DatabaseLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseStackRepository" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCAAAEBAAAAAAAAAAAAQEAKAAAAAAAAAAAAAhAg=</HashCode>
+      <FileName>DAL\DatabaseStackRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseStatisticRepository" BaseTypeListCollapsed="true">
+    <Position X="41.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAGIAQEBAAAAAQAAAQAAAAAAAAAAAgAAAYAggBgY=</HashCode>
+      <FileName>DAL\DatabaseStatisticRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseTradeRepository" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAICAAAEAAAAAAgQCAAAAAIAAAAAAAAAAAAQAABIQ=</HashCode>
+      <FileName>DAL\DatabaseTradeRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DatabaseUserRepository" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgAACAAAEAAAQAAAAEACIEAAAAAEAAAAAAABACABQg=</HashCode>
+      <FileName>DAL\DatabaseUserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.DAL.DataAccessFailedException">
+    <Position X="32.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DataAccessFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.Card">
+    <Position X="45.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAAgAAAQAAAgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.CardPackage">
+    <Position X="47.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CardPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.Credentials">
+    <Position X="44" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Credentials.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.Statistics">
+    <Position X="51" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAgAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.Trade">
+    <Position X="49.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQgAAAABAAgAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Trade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.Models.User" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACQAACAQAAAAAABACAAAAAAABAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.AddCardPackageCommando">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.883" />
+        <Point X="20.5" Y="6.883" />
+        <Point X="20.5" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\AddCardPackageCommando.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.DeleteTradeCommand">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.883" />
+        <Point X="24" Y="6.883" />
+        <Point X="24" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\DeleteTradeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.GetDeckCommand">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.871" />
+        <Point X="15.25" Y="6.871" />
+        <Point X="15.25" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAEBAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\GetDeckCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.GetStackCommand">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.876" />
+        <Point X="1.25" Y="6.876" />
+        <Point X="1.25" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\GetStackCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.GetTradesCommand">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.871" />
+        <Point X="4.75" Y="6.871" />
+        <Point X="4.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\GetTradesCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.PostTradeCommand">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.871" />
+        <Point X="6.5" Y="6.871" />
+        <Point X="6.5" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\PostTradeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.PurchaseRandomPackageCommand">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.871" />
+        <Point X="8.25" Y="6.871" />
+        <Point X="8.25" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\PurchaseRandomPackageCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.SetDeckCommand">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.885" />
+        <Point X="13.5" Y="6.885" />
+        <Point X="13.5" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\SetDeckCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Cards.TradeCommand">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.873" />
+        <Point X="22.25" Y="6.873" />
+        <Point X="22.25" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAQAAAAAAAAAAAAAACAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Cards\TradeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Statistics.GetScoreboardCommand">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.876" />
+        <Point X="18.75" Y="6.876" />
+        <Point X="18.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Statistics\GetScoreboardCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Statistics.GetStatisticsCommand">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.883" />
+        <Point X="11.75" Y="6.883" />
+        <Point X="11.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Statistics\GetStatisticsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Users.GetProfileCommand">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.882" />
+        <Point X="3" Y="6.882" />
+        <Point X="3" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Users\GetProfileCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.Users.LoginCommand" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Users\LoginCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.RouteCommands.Users.RegisterCommand" BaseTypeListCollapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Users\RegisterCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MTCG.RouteCommands.Users.UpdateProfileCommand">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.883" />
+        <Point X="10" Y="6.883" />
+        <Point X="10" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAQAAAAAAAAQAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\Users\UpdateProfileCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.BattleCommand">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="MTCG.RouteCommands.ProtectedRouteCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="6.497" />
+        <Point X="12.5" Y="6.883" />
+        <Point X="17" Y="6.883" />
+        <Point X="17" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RouteCommands\BattleCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTCG.RouteCommands.ProtectedRouteCommand">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RouteCommands\ProtectedRouteCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MTCG.IGameManager">
+    <Position X="37.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAIAAAIAQAAAAAQAAEZAAACAQIAAIAAAAAACAAAAE=</HashCode>
+      <FileName>IGameManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.Battle.IBattleHandler">
+    <Position X="33" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAIAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Battle\IBattleHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.Battle.IBattleLogger">
+    <Position X="31.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAAAwEAAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Battle\IBattleLogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.ICardPackageRepository">
+    <Position X="45.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAQAAAAA=</HashCode>
+      <FileName>DAL\ICardPackageRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.ICardRepository">
+    <Position X="47" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>DAL\ICardRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.IDeckRepository">
+    <Position X="50.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAEAAAAAAAAAACAAAIAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>DAL\IDeckRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.IStackRepository">
+    <Position X="52.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAABAAAAAAAAAAAAAEAIAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>DAL\IStackRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.IStatisticRepository">
+    <Position X="41.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAQAAAAAAAQAAAQAAAAAAAAAAAAAAAQAAgAAY=</HashCode>
+      <FileName>DAL\IStatisticRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.ITradeRepository">
+    <Position X="43.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>DAL\ITradeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTCG.DAL.IUserRepository">
+    <Position X="48.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAEAAAEAAAAAEAAAAAAABAAAAQA=</HashCode>
+      <FileName>DAL\IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MTCG.CardType">
+    <Position X="45.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAABgAAAAAAAAAIAIAgAgAIAAEgAAA=</HashCode>
+      <FileName>Battle\Card\CardType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MTCG.Element">
+    <Position X="45.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAkAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Battle\Card\Element.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
